@@ -161,6 +161,73 @@
             <p>Migrated our Production Cluster from IBM Cloud(IKS) to AWS(EKS) with almost zero downtime. Used StakaterPlatform to deploy all stacks, set up replica of all production applications, used sidecar containers for DBs to take backups of data and push to S3, and restored in target cluster</p>
           </div>
         </div>
+
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+          <div class="resume-content">
+            <h3 class="mb-1">Deployment Architect, Movement of <a href="https://pliro.com"> Pliro </a> to Kubernetes</h3>
+            <p>Pliro is an application of Aurora Solutions which provides complete doctor management solution. It was previously deployed using Docker Compose on AWS and was taking a lot of resources so cost was increasing. We architected the complete workflow of moving Pliro to Kubernetes. It consists of 6 microservices & 2 environments Dev & Prod.. We moved it to Kubernetes, deploying with GitOps in Dev environment and CIOps in prod environment. The code was managed in Bitbucket. The services were deployed through Helm using HelmReleases and SealedSecrets were used for k8s secrets</p>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+          <div class="resume-content">
+            <h3 class="mb-1">Architect, <a href = "https://github.com/stakater/StakaterPlatform" > StakaterPlatform</a> </h3>
+            <p>Worked on StakaterPlatform, and divided it into different stacks which are required for deploying your applications for CI/CD in Kubernetes/Openshift. The stacks can be deployed through helm on just a single command. The stacks and their corresponding tools are:
+            <ul class="list-inline dev-icons fab">
+              <li class="h6" > <b> Control</b>: ExternalDNS, Ingress Controllers, Reloader, efs-provisioner, HelmOperator, Sealed Secrets Controller, K8s Dashboard</li>
+              <li class="h6" > <b>Delivery</b>: Jenkins, Nexus, SonarQube, RDLM, Chartmuseum</li>
+              <li class="h6" > <b>Logging</b>: Fluentd, ElasticSearch, Kibana, Curator, Logrotate, Cerebro</li>
+              <li class="h6" > <b>Monitoring</b>: Prometheus Operator, Prometheus, Grafana, Node Exporter, Kube-State-Metrics, AlertManager</li>
+              <li class="h6" > <b>Security</b>: Keycloak, ProxyInjector</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+        
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+          <div class="resume-content">
+            <h3 class="mb-1">Developer, <a href="https://github.com/stakater/terraform-azure-openshift"> Terraform Azure Openshift </a> </h3>
+            <p>Developed a terraform module to create & manage Openshift 3.11 cluster on Azure. We used already built modules and modified them to fit our needs</p>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+          <div class="resume-content">
+            <h3 class="mb-1">Deployment Architect, Email Service Application</h3>
+            <p>Developed a deployment workflow for an Email Service Application with GitOps for dev and CIOps for qa & prod environments in Openshift cluster. We used Jenkins for CIOps and WeaveWorks Flux for GitOps. Whenever a microservice was updated, the change is automatically reflected in dev environment using WeaveWorks Flux(GitOps) and the change was committed to qa & prod manually and a Jenkins pipeline(CIOps) got triggered for updation there. The code was managed in Bitbucket. The services were deployed through Helm using HelmReleases and SealedSecrets were used for k8s secrets,</p>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+          <div class="resume-content">
+            <h3 class="mb-1">Hosting static websites using AWS S3 & Cloudfront through Terraform</h3>
+            <p>Developed a terraform module to host static websites using AWS S3 & Cloudfront, and use cert from AWS ACM through terraform. Can be used for any type of static website</p>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+          <div class="resume-content">
+            <h3 class="mb-1">Developer & Contributor, Kubernetes Controllers</h3>
+            <p>Developed different Kubernetes controllers for our use cases
+            <ul class="list-inline dev-icons fab">
+              <li class="h6" > <a href = "https://github.com/stakater/Chowkidar" > Chowkidar</a>: Kubernetes controller for observing events on pods </li>
+              <li class="h6" > <a href = "https://github.com/stakater/Jamadar" > Jamadar</a>: Kubernetes clean-up application for Dangling resources </li>
+              <li class="h6" > <a href = "https://github.com/stakater/Reloader" > Reloader</a>: Controller to watch changes in ConfigMap and Secrets and
+performs rolling update on Pods</li>
+              <li class="h6" > <a href = "https://github.com/stakater/IngressMonitorController" > IngressMonitorController</a>: Controller to watch ingresses and create liveness alerts for your
+apps/microservices </li>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
       <div class="w-100">
         <h2 class="mb-3">Skills</h2>
