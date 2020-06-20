@@ -161,6 +161,13 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
           <div class="resume-content">
+            <h3 class="mb-1">Managed Openshift Offering</h3>
+            <p>Architected our Managed Openshift Offering, We are running a Mangement openshift cluster and provisioning child clusters using Hive, and then deploying all the platform related applications using SelectorSyncsets & Syncsets on child cluster. We have provisioned cluster on AWS, Azure & GCP and our management cluster is on IBM cloud. The platform applications that we run are Monitoring stack, Logging(EFK) stack, Pipelines Operator, Jenkins, Helm 3, Velero for backups, Vault. All of these tools are deployed either using their Operators or Helm charts. 
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-2">
+          <div class="resume-content">
             <h3 class="mb-1">Migration from IBM cloud to AWS</h3>
             <p>Migrated our Production Cluster from IBM Cloud(IKS) to AWS(EKS) with almost zero downtime. Used StakaterPlatform to deploy all stacks, set up replica of all production applications, used sidecar containers for DBs to take backups of data and push to S3, and restored in target cluster</p>
           </div>
@@ -247,8 +254,10 @@ apps/microservices </li>
 
         <h3 class="mb-0">K8s Tools:</h3>
         <ul class="list-inline dev-icons fab">
+          <li class="list-inline-item h4" > Operators</li>
           <li class="list-inline-item h4" > K8s Controllers</li>
           <li class="list-inline-item h4" > Sealed Secrets Controller</li>
+          <li class="list-inline-item h4" > Velero</li>
           <li class="list-inline-item h4" > Helm Operator</li>
           <li class="list-inline-item h4" > Weaveworks Flux(GitOps)</li>
           <li class="list-inline-item h4" > Prometheus</li>
